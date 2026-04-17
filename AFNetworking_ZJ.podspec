@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/dale454071867/AFNetworking_ZJ'
   s.authors  = { 'ZJ' => 'your@email.com' }
 
-  s.source   = {
+  s.source = {
     :git => 'https://github.com/dale454071867/AFNetworking_ZJ.git',
     :tag => s.version.to_s
   }
@@ -22,9 +22,12 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '4.0'
 
   # ======================
-  # Core Source (关键修复)
+  # Core Source
   # ======================
-  s.source_files = 'AFNetworking/**/*.{h,m}', 'UIKit+AFNetworking/**/*.{h,m}'
+  s.source_files = [
+    'AFNetworking/**/*.{h,m}',
+    'UIKit+AFNetworking/**/*.{h,m}'
+  ]
 
   # ======================
   # Serialization
@@ -51,20 +54,21 @@ Pod::Spec.new do |s|
   # NSURLSession
   # ======================
   s.subspec 'NSURLSession' do |ss|
-    ss.dependency 'AFNetworking_ZJ/Serialization'
-    ss.dependency 'AFNetworking_ZJ/Security'
-    ss.dependency 'AFNetworking_ZJ/Reachability'
+    ss.dependency 'Serialization'
+    ss.dependency 'Security'
+    ss.dependency 'Reachability'
 
-    ss.source_files = 
+    ss.source_files = [
       'AFNetworking/AF{URL,HTTP}SessionManager.{h,m}',
       'AFNetworking/AFCompatibilityMacros.h'
+    ]
   end
 
   # ======================
   # UIKit Extensions
   # ======================
   s.subspec 'UIKit' do |ss|
-    ss.dependency 'AFNetworking_ZJ/NSURLSession'
+    ss.dependency 'NSURLSession'
 
     ss.source_files = 'UIKit+AFNetworking/**/*.{h,m}'
   end
