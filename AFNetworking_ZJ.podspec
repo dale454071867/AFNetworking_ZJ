@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'UIKit' do |ss|
-    ss.dependency 'NSURLSession'
+    ss.dependency 'AFNetworking_ZJ/NSURLSession'
     ss.source_files = 'UIKit+AFNetworking/**/*.{h,m}'
   end
 
