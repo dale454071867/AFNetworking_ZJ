@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name     = 'AFNetworking_ZJ'
+  s.name     = 'AFNetworking'
   s.version  = '4.0.1'
   s.license  = 'MIT'
   s.summary  = 'Custom AFNetworking fork (ZJ version)'
