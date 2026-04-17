@@ -45,7 +45,7 @@ AFNetworking supports multiple methods for installing the library in a project.
 To integrate AFNetworking into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'AFNetworking', '~> 4.0'
+pod 'AFNetworking_ZJ', '~> 4.0'
 ```
 
 ### Installation with Swift Package Manager
