@@ -166,6 +166,6 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
 
 @end
 
-#endif
-
 NS_ASSUME_NONNULL_END
+
+#endif
