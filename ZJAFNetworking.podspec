@@ -1,21 +1,20 @@
 Pod::Spec.new do |s|
   s.name = 'ZJAFNetworking'
-  s.version = '4.0.1'
+  s.version = '1.0.0'
 
   s.summary = 'Custom AFNetworking fork'
   s.homepage = 'https://github.com/dale454071867/AFNetworking_ZJ'
   s.license = { :type => 'MIT' }
-  s.authors = { 'ZJ' => 'your@email.com' }
+  s.authors = { 'ZJ' => '454071867@qq.com' }
 
   s.source = {
     :git => 'https://github.com/dale454071867/AFNetworking_ZJ.git',
-    :branch => 'master'
+    :tag => "#{s.version}"
   }
 
   s.requires_arc = true
   s.ios.deployment_target = '12.0'
 
-  # ❗ 直接全部源码，不用 subspec
   s.source_files = [
     'AFNetworking/**/*.{h,m}',
     'UIKit+AFNetworking/**/*.{h,m}'
