@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name = 'ZJAFNetworking'
-  s.version = '1.0.1'
+  s.name = 'ZJieAFNetworking.podspec'
+  s.version = '4.0.1'
 
   s.summary = 'Custom AFNetworking fork'
   s.homepage = 'https://github.com/dale454071867/AFNetworking_ZJ'
