@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = 'ZJieAFNetworking.podspec'
+  s.name = 'ZJieAFNetworking'
   s.version = '4.0.1'
 
   s.summary = 'Custom AFNetworking fork'
